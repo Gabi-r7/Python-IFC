@@ -21,3 +21,4 @@ elif sexo == 'M':
         print('Erro! Idade inválida')
 else:
     print('Erro! Sexo inválido')
+ 
