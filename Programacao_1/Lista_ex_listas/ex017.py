@@ -9,3 +9,25 @@
 # Atleta: Rodrigo Curvêllo
 # Saltos: 6.5 - 6.1 - 6.2 - 5.4 - 5.3 
 # Média dos saltos: 5.9 m 
+
+saltos = []
+media_saltos = 0
+
+while True:
+    nome_atleta = input('Digite o nome do atleta: ')
+
+    if nome_atleta == '':
+        break
+
+    for i in range(5):
+        saltos.append(float(input(f'Digite a distância do {i+1}° salto: ')))
+        media_saltos += saltos[i]
+
+    media_saltos /= len(saltos)
+    print('Resultado Final')
+    print(f'Atleta: {nome_atleta}')
+    print(f'Saltos: {saltos}')
+    print(f'Média dos saltos: {media_saltos} m')
+
+    saltos = []
+    media_saltos = 0
